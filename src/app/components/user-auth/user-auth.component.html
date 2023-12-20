@@ -1,0 +1,71 @@
+<div class="user-Signup">
+    <form [formGroup]="user_Data" (ngSubmit)="uData(user_Data.value)" *ngIf="uShowPage">
+        <h1>User Sign-Up</h1>
+        <div class="row">
+            <div class="col-sm-12 mt2">
+                <input type="text" name="name" placeholder="Enter your name" formControlName="name" class="form-control"
+                    [(ngModel)]="name">
+                <div class="form-control is-invalid"
+                    *ngIf="user_Data.get('name').invalid && user_Data.get('name').touched">
+                    <div *ngIf="user_Data.get('name').errors.required">Give your Name please</div>
+                    <div *ngIf="user_Data.get('name').errors.pattern">please provide valid name</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mt-2">
+                <input type="email" name="Email" placeholder="Enter Your E-mail" formControlName="Email"
+                    class="form-control" [(ngModel)]="Email">
+                <div class="form-control is-invalid"
+                    *ngIf="user_Data.get('Email').invalid && user_Data.get('Email').touched">
+                    <div *ngIf="user_Data.get('Email').errors.required">Plese Provide E-mail</div>
+                    <div *ngIf="user_Data.get('Email').errors.pattern">Please provise valid E-mail address</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mt-2">
+                <input type="text" name="password" placeholder="Enter your login Password" formControlName="password"
+                    class="form-control" [(ngModel)]="password">
+                <div class="form-control is-invalid"
+                    *ngIf="user_Data.get('password').invalid && user_Data.get('password').touched">
+                    <div *ngIf="user_Data.get('password').errors.required">Password Is required</div>
+                    <div *ngIf="user_Data.get('password').errors.pattern">Please provide Strong Password</div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="form-control mt-5" [disabled]="user_Data.invalid">Sign-Up</button><br>
+        <a class="auth-toggel-link" (click)="openLogin()">Already Have an Account? Click to Login</a>
+    </form>
+
+<!-- User Login -->
+
+    <form [formGroup]="user_login" (ngSubmit)="uSubmit(user_login.value)" *ngIf="!uShowPage">
+        <h1>User Login</h1>
+        <p class="error-p">{{authEroor}}</p>
+        <div class="row">
+            <div class="col-sm-12 mt-2">
+                <input type="email" name="uMail" placeholder="Enter Your E-mail" formControlName="uMail"
+                    class="form-control" [(ngModel)]="uMail">
+                <div class="form-control is-invalid"
+                    *ngIf="user_login.get('uMail').invalid && user_login.get('uMail').touched">
+                    <div *ngIf="user_login.get('uMail').errors.required">Plese Provide E-mail</div>
+                    <div *ngIf="user_login.get('uMail').errors.pattern">Please provise valid E-mail address</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mt-2">
+                <input type="text" name="uPass" placeholder="Enter your login Password" formControlName="uPass"
+                    class="form-control" [(ngModel)]="uPass">
+                <div class="form-control is-invalid"
+                    *ngIf="user_login.get('uPass').invalid && user_login.get('uPass').touched">
+                    <div *ngIf="user_login.get('uPass').errors.required">Password Is required</div>
+                    <div *ngIf="user_login.get('uPass').errors.pattern">Please provide Strong Password</div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="form-control mt-5" [disabled]="user_login.invalid">Log-In</button><br>
+        <a class="auth-toggel-link" (click)="openSignup()">Dont Have an Account? Click to Sign-Up</a>
+    </form>
+</div>

@@ -1,0 +1,293 @@
+{
+  "seller": [
+    {
+      "id": 1,
+      "name": "Rushikesh",
+      "Email": "rushij74@gmail.com",
+      "password": "Rushi@123"
+    },
+    {
+      "id": 2,
+      "name": "Shreyash",
+      "Email": "shreya11@gmail.com",
+      "password": "Shreya@123"
+    },
+    {
+      "name": "Aakash",
+      "Email": "aakash1@gmail.com",
+      "password": "ash@123",
+      "id": 3
+    },
+    {
+      "name": "Saqlain",
+      "Email": "saq02@gmail.com",
+      "password": "Saqlain@123",
+      "id": 4
+    },
+    {
+      "name": "Balaji",
+      "Email": "balaji7@gmail.com",
+      "password": "Balaji@123",
+      "id": 5
+    },
+    {
+      "name": "Pratik",
+      "Email": "pratik03@gmail.com",
+      "password": "Pratik@123",
+      "id": 6
+    },
+    {
+      "name": "alena",
+      "Email": "alena05@gmail.com",
+      "password": "Alena@123",
+      "id": 7
+    },
+    {
+      "name": "Prathamesh",
+      "Email": "prathamesh02@gmail.com",
+      "password": "Prathamesh@123",
+      "id": 8
+    },
+    {
+      "name": "Vishwajit",
+      "Email": "vishwa06@gmail.com",
+      "password": "Vishwa@123",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "pName": "hpPavillion",
+      "pPrice": "70000",
+      "pColor": "violet",
+      "pCategory": "Laptop",
+      "pLink": "https://m.media-amazon.com/images/I/81pezrPSgOL._AC_UF1000,1000_QL80_.jpg",
+      "pDescription": "Hello Users"
+    },
+    {
+      "pName": "iPhone14",
+      "pPrice": "85000",
+      "pColor": "White",
+      "pCategory": "Mobile",
+      "pDescription": "Hi Users",
+      "pLink": "https://m.media-amazon.com/images/I/61b7Ew7kjYL._AC_UF1000,1000_QL80_.jpg",
+      "id": 2
+    },
+    {
+      "pName": "realme 7",
+      "pPrice": "15000",
+      "pColor": "white",
+      "pDescription": "Ram 6/64 Rom,side fingerprint",
+      "pLink": "https://d2xamzlzrdbdbn.cloudfront.net/products/efebec61-2755-4e4c-a00a-1c05bff34634.jpg",
+      "pCategory": "mobile",
+      "id": 3
+    },
+    {
+      "pName": "redmi note 12 pro",
+      "pPrice": "22999",
+      "pColor": "Black",
+      "pCategory": "mobile",
+      "pDescription": "8GB + 128GB, MediaTek Dimensity ",
+      "pLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP55T6n9CeXue2lp7ObBcruReZcaFBZoiJ4g&usqp=CAU",
+      "id": 4
+    },
+    {
+      "pName": "iPad Air",
+      "pPrice": "59000",
+      "pColor": "Blue",
+      "pDescription": "Want to learn more about Wi-Fi + Cellular?If there’s no Wi-Fi",
+      "pLink": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-air-storage-select-202207-blue-wifi?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1670879031194",
+      "pCategory": "iPad",
+      "id": 5
+    },
+    {
+      "pName": "Dell Inspiron 7420 ",
+      "pPrice": "75990",
+      "pColor": "Grey",
+      "pDescription": "Dell Inspiron 7420 2in1 Laptop, Intel Core i5-1235U Processor/ 16GB DDR4/ 512GB SSD/ 14.0",
+      "pLink": "https://m.media-amazon.com/images/I/51tRMZKn4tL._SX679_.jpg",
+      "pCategory": "Laptop",
+      "id": 6
+    },
+    {
+      "pName": "Sony PS5 PlayStation",
+      "pPrice": "54990",
+      "pColor": "White",
+      "pDescription": "Maximize your play sessions with near instant load times for installed PS5 games.",
+      "pLink": "https://m.media-amazon.com/images/I/51mWHXY8hyL._SX522_.jpg",
+      "pCategory": "Play Station",
+      "id": 7
+    },
+    {
+      "pName": "Lancer Men's Sports Shoes",
+      "pPrice": "629",
+      "pColor": "White",
+      "pDescription": "Material Type Mesh, Closure Type Pull On, Heel Type Flat",
+      "pLink": "https://m.media-amazon.com/images/I/61RFlIUeaIL._SY695_.jpg",
+      "pCategory": "Shoes",
+      "id": 8
+    },
+    {
+      "pName": "Noise Pulse 2",
+      "pPrice": "1499",
+      "pColor": "Black",
+      "pDescription": "Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Sports Modes, Smartwatch for Men and Women (Jet Black)",
+      "pLink": "https://m.media-amazon.com/images/I/41UoKKWuxjL._SX300_SY300_QL70_FMwebp_.jpg",
+      "pCategory": "watches",
+      "id": 9
+    },
+    {
+      "pName": "boAt Airdopes 170",
+      "pPrice": "1498",
+      "pColor": "Blue",
+      "pDescription": "Earbuds with 50H Playtime, Quad Mics ™ Tech, Low Latency Mode, 13mm Drivers, ASAP™ Charge, IPX4, IWP™, Touch Controls & BT v5.3(Tranquil Blue)",
+      "pLink": "https://m.media-amazon.com/images/I/5154Num4eEL._SX679_.jpg",
+      "pCategory": "Earbuds",
+      "id": 10
+    },
+    {
+      "pName": "JBL",
+      "pPrice": "7499",
+      "pColor": "Red",
+      "pDescription": "Wireless Portable Bluetooth Speaker, Signature Sound with Powerful Bass Radiator, Vibrant Colors with Rugged Fabric Design, IPX7 Waterproof & Type C Without Mic, Red",
+      "pLink": "https://m.media-amazon.com/images/I/81nglwEY59L._SX679_.jpg",
+      "pCategory": "sound",
+      "id": 11
+    },
+    {
+      "pName": "Sony",
+      "pPrice": "46922",
+      "pColor": "Black",
+      "pDescription": "Vlog Camera for Content Creators and Vloggers with Ultra-Wide 20mm Prime Lens | Soft Skin Feature | Bokeh | Creative Look ",
+      "pLink": "https://m.media-amazon.com/images/I/71UKHtv92KL._SX522_.jpg",
+      "pCategory": "Camera",
+      "id": 12
+    },
+    {
+      "pName": "Godrej 180 L 2",
+      "pPrice": "12000",
+      "pColor": "Blue",
+      "pDescription": "Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)",
+      "pLink": "https://m.media-amazon.com/images/I/41-4uRkNC2L._SY445_SX342_QL70_FMwebp_.jpg",
+      "pCategory": "fridge",
+      "id": 13
+    },
+    {
+      "pName": "mens kurta",
+      "pPrice": "1000",
+      "pColor": "Purple",
+      "pDescription": "VASTRAMAY Men Cotton Only Kurta-Q1",
+      "pLink": "https://m.media-amazon.com/images/I/516Djgy-LoL._SY550_.jpg",
+      "pCategory": "clothe",
+      "id": 14
+    }
+  ],
+  "user": [
+    {
+      "name": "siddhant",
+      "Email": "sid04@gmail.com",
+      "password": "Siddhant@123",
+      "id": 1
+    },
+    {
+      "name": "Manoj",
+      "Email": "manoj08@gmail.com",
+      "password": "Manoj@123",
+      "id": 2
+    },
+    {
+      "name": "Rohan",
+      "Email": "rohan09@gmail.com",
+      "password": "Rohan@123",
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "pName": "hpPavillion",
+      "pPrice": "70000",
+      "pColor": "violet",
+      "pCategory": "Laptop",
+      "pLink": "https://m.media-amazon.com/images/I/81pezrPSgOL._AC_UF1000,1000_QL80_.jpg",
+      "pDescription": "Hello Users",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "pName": "Noise Pulse 2",
+      "pPrice": "1499",
+      "pColor": "Black",
+      "pDescription": "Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Sports Modes, Smartwatch for Men and Women (Jet Black)",
+      "pLink": "https://m.media-amazon.com/images/I/41UoKKWuxjL._SX300_SY300_QL70_FMwebp_.jpg",
+      "pCategory": "watches",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 9,
+      "id": 2
+    },
+    {
+      "pName": "hpPavillion",
+      "pPrice": "70000",
+      "pColor": "violet",
+      "pCategory": "Laptop",
+      "pLink": "https://m.media-amazon.com/images/I/81pezrPSgOL._AC_UF1000,1000_QL80_.jpg",
+      "pDescription": "Hello Users",
+      "quantity": 1,
+      "productId": 1,
+      "userId": null,
+      "id": 6
+    },
+    {
+      "pName": "iPhone14",
+      "pPrice": "85000",
+      "pColor": "White",
+      "pCategory": "Mobile",
+      "pDescription": "Hi Users",
+      "pLink": "https://m.media-amazon.com/images/I/61b7Ew7kjYL._AC_UF1000,1000_QL80_.jpg",
+      "quantity": 1,
+      "productId": 2,
+      "userId": null,
+      "id": 7
+    },
+    {
+      "pName": "hpPavillion",
+      "pPrice": "70000",
+      "pColor": "violet",
+      "pCategory": "Laptop",
+      "pLink": "https://m.media-amazon.com/images/I/81pezrPSgOL._AC_UF1000,1000_QL80_.jpg",
+      "pDescription": "Hello Users",
+      "quantity": 1,
+      "productId": 1,
+      "userId": null,
+      "id": 8
+    },
+    {
+      "pName": "realme 7",
+      "pPrice": "15000",
+      "pColor": "white",
+      "pDescription": "Ram 6/64 Rom,side fingerprint",
+      "pLink": "https://d2xamzlzrdbdbn.cloudfront.net/products/efebec61-2755-4e4c-a00a-1c05bff34634.jpg",
+      "pCategory": "mobile",
+      "quantity": 1,
+      "productId": 3,
+      "userId": null,
+      "id": 9
+    },
+    {
+      "pName": "hpPavillion",
+      "pPrice": "70000",
+      "pColor": "violet",
+      "pCategory": "Laptop",
+      "pLink": "https://m.media-amazon.com/images/I/81pezrPSgOL._AC_UF1000,1000_QL80_.jpg",
+      "pDescription": "Hello Users",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 10
+    }
+  ],
+  "orders": []
+}

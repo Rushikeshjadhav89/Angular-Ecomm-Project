@@ -1,0 +1,27 @@
+.check_out input{
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    text-align: center;
+}
+.check_out h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:50px ;
+   
+}
+.check_out h3,h4{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+ 
+}
+.check_out button{
+    color: blueviolet;
+    cursor: pointer;
+    height: 45px;
+    
+}
+.message-p{
+    color: green;
+    text-align: center;
+}

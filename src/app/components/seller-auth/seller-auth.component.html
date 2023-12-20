@@ -1,0 +1,63 @@
+<div class="loginbox">
+    <form [formGroup]="empData" (ngSubmit)="addData(empData.value)" *ngIf="showLogin">
+        <h1>Seller Sign-Up</h1>
+        <div class="row">
+            <div class="col-sm-12 mt2">
+                <input type="text" name="name" placeholder="Enter your name" 
+                formControlName="name" class="form-control"  [(ngModel)]="name">
+                <div class="form-control is-invalid" *ngIf="empData.get('name').invalid && empData.get('name').touched">
+                    <div  *ngIf="empData.get('name').errors.required">Give your Name please</div>
+                    <div *ngIf="empData.get('name').errors.pattern">please provide valid name</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">  
+            <div class="col-sm-12 mt-2">
+                <input type="email" name="Email" placeholder="Enter Your E-mail"
+                 formControlName="Email" class="form-control" [(ngModel)]="Email">
+                 <div class="form-control is-invalid" *ngIf="empData.get('Email').invalid && empData.get('Email').touched">
+                    <div *ngIf="empData.get('Email').errors.required">Plese Provide E-mail</div>
+                    <div *ngIf="empData.get('Email').errors.pattern">Please provise valid E-mail address</div>
+                 </div>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-sm-12 mt-2">
+                <input type="text" name="password" placeholder="Enter your login Password" formControlName="password" class="form-control" [(ngModel)]="password">
+                    <div class="form-control is-invalid" *ngIf="empData.get('password').invalid && empData.get('password').touched">
+                        <div  *ngIf="empData.get('password').errors.required">Password Is required</div>
+                        <div *ngIf="empData.get('password').errors.pattern">Please provide Strong Password</div>
+                    </div>
+            </div>
+        </div>
+        <button type="submit" class="form-control mt-5" [disabled]="empData.invalid">Sign-Up</button><br>
+        <a (click)="openLogin()" class="auth-toggel-link">Already Have Account? Click to Login</a>
+    </form>
+    <!-- login Area -->
+    <form [formGroup]="loginData" (ngSubmit)="logData(loginData.value)" *ngIf="!showLogin">
+        <h1>Seller Login</h1>
+        <div class="error-p">{{authError}}</div>
+        <div class="row">  
+            <div class="col-sm-12 mt-2">
+                <input type="email" name="sMail" placeholder="Enter Your E-mail"
+                 formControlName="sMail" class="form-control" [(ngModel)]="sMail">
+                 <div class="form-control is-invalid" *ngIf="loginData.get('sMail').invalid && loginData.get('sMail').touched">
+                    <div *ngIf="loginData.get('sMail').errors.required">Plese Provide E-mail</div>
+                    <div *ngIf="loginData.get('sMail').errors.pattern">Please provise valid E-mail address</div>
+                 </div>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-sm-12 mt-2">
+                <input type="text" name="sPass" placeholder="Enter your login Password" formControlName="sPass" class="form-control" [(ngModel)]="sPass">
+                    <div class="form-control is-invalid" *ngIf="loginData.get('sPass').invalid && loginData.get('sPass').touched">
+                        <div  *ngIf="loginData.get('sPass').errors.required">Password Is required</div>
+                        <div *ngIf="loginData.get('sPass').errors.pattern">Please provide Strong Password</div>
+                    </div>
+            </div>
+        </div>
+        <button type="submit" class="form-control mt-5" [disabled]="loginData.invalid">Login</button><br>
+        <a (click)="opensignUp()" class="auth-toggel-link">Dont Have an Account? Click to Sign-Up</a>
+    </form>
+</div>
+

@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Add New Product</h1>
+    <p class="message-p">{{addProductMessage}}</p>
+<form [formGroup]="addData" (ngSubmit)="addProduct(addData.value)">
+    <div class="row">
+        <div class="col-sm-6 mt-2">
+            <input type="text" placeholder="Enter product name" 
+            formControlName="pName" class="form-control" name="pName" [(ngModel)]="pName">
+        </div>
+        <div class="col-sm-6 mt-2">
+            <input type="text" placeholder="Enter Product Price" 
+            formControlName="pPrice" class="form-control" name="pPrice" [(ngModel)]="pPrice">
+        </div>  
+    </div>
+    <div class="row">
+        <div class="col-sm-6 mt-2">
+            <input type="text" name="pColor" placeholder="Enter Your Product Color" class="form-control" formControlName="pColor" [(ngModel)]="pColor">
+        </div>
+        <div class="col-sm-6 mt-2">
+            <input type="text" name="pCategory" placeholder="Enter Your Product Category" formControlName="pCategory" class="form-control" [(ngModel)]="pCategory">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <textarea name="pDescription" cols="81" rows="5" class="form-control" placeholder="Enter Product Description"  formControlName="pDescription" [(ngModel)]="pDescription"></textarea>
+        </div>  
+        <div class="col-sm-6">
+            <input type="text" placeholder="Enter Product Image URL" name="pLink" formControlName="pLink" class="form-control" [(ngModel)]="pLink">
+        </div> 
+    </div>
+   <button type="submit" class="form-control" [disabled]="addData.invalid">Add Product</button>
+</form>
+</div>

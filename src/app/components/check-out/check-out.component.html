@@ -1,0 +1,29 @@
+<div class="check_out">
+    <h1>Checkout</h1>
+    <p class="message-p">{{orderMsg}}</p>
+    <div class="row">
+        <div class="col-sm-7">
+            <h3>Add Shiping Address</h3>
+            <form [formGroup]="checkout" (ngSubmit)="checkData(checkout.value)">
+                <input type="email" name="cMail" formControlName="cMail" class="form-control mt-2" placeholder="Enter your Email" [(ngModel)]="cMail">
+                <div class="form-control is-invalid" *ngIf="checkout.get('cMail').invalid && checkout.get('cMail').touched">
+                    <div *ngIf="checkout.get('cMail').errors.required">please enter your mail</div>
+                    <div *ngIf="checkout.get('cMail').errors.pattern">Please enter valid Mail</div>
+                </div>
+                <input type="text" name="caddress" formControlName="caddress" placeholder="Enter your address" class="form-control mt-2" [(ngModel)]="caddress">
+                <div class="form-control is-invalid" *ngIf="checkout.get('caddress').invalid && checkout.get('caddress').touched">
+                    <div *ngIf="checkout.get('caddress').errors.required">please enter your address</div>
+                </div>
+                <input type="text" name="cContact" formControlName="cContact" placeholder="Enter your contact Info" class="form-control mt-2" [(ngModel)]="cContact">
+                <div class="form-control is-invalid" *ngIf="checkout.get('cContact').invalid && checkout.get('cContact').touched">
+                    <div *ngIf="checkout.get('cContact').errors.required">please enter your Contact info</div>
+                </div>
+                <button type="submit" class="form-control mt-4" [disabled]="checkout.invalid">Order Now</button>
+            </form>
+        </div>
+        <div class="col-sm-5">
+            <h3>Total Amount :{{totalPrice}}</h3>
+            <h4>Payment Method : <b>Pay on Delivery</b></h4>
+        </div>
+    </div>
+</div>

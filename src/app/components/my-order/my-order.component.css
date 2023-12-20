@@ -1,0 +1,25 @@
+.form-button{
+       
+        color: blueviolet;
+        cursor: pointer;
+        height: 45px;
+        border: 1px solid blueviolet;
+    
+}
+.order-img{
+    width: 100px;
+}
+.my-order h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.order-data{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.my-order{
+    margin-bottom: 100px;
+}

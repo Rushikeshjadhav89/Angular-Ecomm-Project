@@ -1,0 +1,37 @@
+.container{
+    
+    width: 1500px;
+     margin-top: 150px;
+     border-radius: 3px;
+ }
+ 
+ .container input{
+     border: 2px solid blueviolet;
+     color: blueviolet;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     padding-right: 25px;
+     padding-left: 25px;
+ }
+ .container textarea{
+     border: 2px solid blueviolet;
+     margin-bottom: 10px;
+     padding-left: 15px;
+     color: blueviolet;
+ }
+ .container button{
+     border: 1px solid blueviolet;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: blueviolet;
+ 
+ }
+ 
+ .container h1{
+     text-align: center;
+     color: blueviolet;
+ }
+ .message-p{
+     color: green;
+     text-align: center;
+ }

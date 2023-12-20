@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Update Product</h1>
+
+    <p class="message-p">{{productMessage}}</p>
+    
+<form #myform="ngForm" (ngSubmit)="upProduct(myform.value)">
+    <div class="row">
+        <div class="col-sm-6 mt-2">
+            <input type="text" placeholder="Enter product name" 
+             class="form-control" name="pName" ngModel="{{productData?.pName}}">
+        </div>
+        <div class="col-sm-6 mt-2">
+            <input type="text" placeholder="Enter Product Price" 
+             class="form-control" name="pPrice" ngModel="{{productData?.pPrice}}">
+        </div>  
+    </div>
+    <div class="row">
+        <div class="col-sm-6 mt-2">
+            <input type="text" name="pColor" placeholder="Enter Your Product Color" class="form-control"  ngModel="{{productData?.pColor}}">
+        </div>
+        <div class="col-sm-6 mt-2">
+            <input type="text" name="pCategory" placeholder="Enter Your Product Category"  class="form-control" ngModel="{{productData?.pCategory}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <textarea name="pDescription" cols="81" rows="5" class="form-control" placeholder="Enter Product Description" ngModel="{{productData?.pDescription}}"></textarea>
+        </div>  
+        <div class="col-sm-6">
+            <input type="text" placeholder="Enter Product Image URL" name="pLink"  class="form-control" ngModel="{{productData?.pLink}}">
+        </div> 
+    </div>
+   <button type="submit" class="form-control" [disabled]="myform.invalid">Update Product</button>
+</form>
+</div>
+
